@@ -9,7 +9,7 @@ import { UnVerifyedUserDelete } from './utils/unVerifyedUserDelete.js';
 import healthRouter from './routes/healthRouter.js';
 const app = express();
 app.use(helmet());
-// app.use(cors());
+ app.use(cors());
 
 app.use(express.json()); // body parser
 
