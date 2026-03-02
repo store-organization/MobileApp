@@ -11,7 +11,8 @@ const app = express();
 app.use(helmet());
  app.use(cors({
   origin: '*',
-  methods: ['GET','POST','PUT','DELETE']
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json()); // body parser
